@@ -10,10 +10,9 @@
     position: fixed;
     border-top: 1px solid whitesmoke;
       background: white;
-     justify-content: space-between;
 
       .image {
-    width: 5%;
+    width: 6%;
     height: 8vh;
     background-size: contain;
     background-position: center;
@@ -23,12 +22,29 @@
     margin-left: 18px;
      margin-top: 4px
   }
+  .play-name{
+     width: 6%;
+     margin-left: 16px;
+     display: flex;
+     justify-content: center;
+  }
+
+    .play-logo{
+      width: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
     .progress-bar{
-       width: 78%;
+       width:  50%;
         background-color: #6c63ff;
         height: 2px;
     }
-   
+    .options > *{
+        margin-left: 15px;
+      //  justify-content: space-between;
+    }
   
 }
 }
