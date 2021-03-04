@@ -1,0 +1,3 @@
+export const RECENTLY_RELEASED_DATA = {
+  TRACK_DATA: "TRACK_DATA",
+};

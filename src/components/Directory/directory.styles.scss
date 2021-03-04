@@ -1,0 +1,21 @@
+.directory{
+    height: 70vh;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumGB) var(--scrollbarBG);
+
+    &::-webkit-scrollbar {
+        width: 11px;
+    }
+
+
+
+   .directory-hidden{
+
+        .directory-section {
+            // overflow: hidden;
+        }
+       
+   }
+    
+}

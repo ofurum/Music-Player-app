@@ -1,0 +1,35 @@
+.play-box-play{
+  opacity: 0.9;
+
+   
+  .play-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    border-top: 1px solid whitesmoke;
+      background: white;
+     justify-content: space-between;
+
+      .image {
+    width: 5%;
+    height: 8vh;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 18px;
+     margin-top: 4px
+  }
+    .progress-bar{
+       width: 78%;
+        background-color: #6c63ff;
+        height: 2px;
+    }
+   
+  
+}
+}
+

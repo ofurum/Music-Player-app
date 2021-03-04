@@ -1,0 +1,41 @@
+.header{
+
+    overflow: hidden;
+    height: 25vh;
+    background:#ffb5a7;
+   .directory-header{
+    display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   .directory-image{
+       overflow: hidden;
+       .dir-image{
+
+            height: 30vh;
+            width: 33%;
+            position:absolute;
+            top: 0;
+
+        }
+   }
+    .directory-text{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        color: #fff;
+        letter-spacing:1px;
+        font-size:30px;
+        padding-right: 90px;
+        font-weight: bolder
+    }
+
+    .directory-text > *{
+        margin-top:50px;
+        line-height: 2px
+    }
+
+     .text-name{
+         margin-top:80px
+     }
+}
+}

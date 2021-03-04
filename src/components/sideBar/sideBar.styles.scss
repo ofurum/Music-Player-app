@@ -1,0 +1,47 @@
+.side-bar{
+    background: blue;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+
+     .avater{
+        //  margin-left: auto;
+        //  margin-right: auto
+        display:  flex;
+        justify-content: center
+     }
+     .name{
+         display: flex;
+         justify-content: center;
+         color: #fff;
+         line-height: 0
+     }
+
+    .menu-items{
+        color: #fff;
+        cursor: pointer;
+        display: flex column;
+        
+        margin-top: 40px;
+        
+    }
+
+    .menu-items > *{
+        display: flex;
+        width: 60.5%;
+        padding: 20px;
+        padding-left: 30%;
+   
+
+        &:hover{
+            background: rgb(126, 126, 245);
+        }
+
+        &.fas{
+            margin-right: 5px
+        }
+    }
+     
+    
+}
