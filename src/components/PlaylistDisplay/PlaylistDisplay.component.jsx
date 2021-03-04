@@ -27,7 +27,7 @@ console.log("PlaylistDisplay", match);
 },[])
     return (
       <div className="Playlist-display">
-        {/* <h1>{playlistData.title}</h1> */}
+        <h1>playlist</h1>
       </div>
     );
 }

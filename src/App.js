@@ -7,11 +7,8 @@ import "./App.css";
 const App =() =>{
   return (
     <div className="App">
-        <Sidebar />
-       <Switch>
-       <Route exact path="/" component={HomePage} />
-       <Route path={'/:id'} component={PlayListPage} />
-      </Switch>
+      <Sidebar />
+      <HomePage />
     </div>
   );
 }

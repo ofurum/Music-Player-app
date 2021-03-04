@@ -5,7 +5,7 @@ import { addNewPlaylist } from "../../redux/addPlaylist/addPlaylist.action";
 import {connect} from 'react-redux';
 import { withRouter } from "react-router-dom";
 import {createBrowserHistory} from 'history';
-
+import {setIsPlaylist} from '../../redux/listPlayList/listPlaList.action'
 const Card = ({
   freshData,
   addNewPlaylist,
@@ -15,18 +15,19 @@ const Card = ({
   type,
   match,
   history,
-  playlistId,
-  id
+  setIsPlaylist,
+  id,
 }) => {
   console.log("card-fresDa", type);
-//  history = createBrowserHistory({ forceRefresh: true });
+  //  history = createBrowserHistory({ forceRefresh: true });
   const addPlaylist = () => {
-    if(type == "playlist" || type == 'album'){
+    if (type == "playlist" || type == "album") {
+      setIsPlaylist(true)
       return history.push(`${match.url}${id}`);
-    }else{
-       return addNewPlaylist(freshData);
-    }
 
+    } else {
+      return addNewPlaylist(freshData);
+    }
   };
   return (
     <div className="card-component" onClick={() => addPlaylist()}>
@@ -49,6 +50,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   addNewPlaylist: (playlist) => dispatch(addNewPlaylist(playlist)),
+  setIsPlaylist: (IdentifyingPlaylist) => dispatch(setIsPlaylist(IdentifyingPlaylist)),
 });
 
 export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Card))

@@ -12,7 +12,7 @@ const Browse = ({browse, title}) => {
         </div>
         <div className="browse-part">
           {browse.map(listOfBrowse => (
-            <Card key={listOfBrowse.id} listOfBrowse={listOfBrowse} image={listOfBrowse.cover_small} title={listOfBrowse.title} type={listOfBrowse.type}/>
+            <Card key={listOfBrowse.id} listOfBrowse={listOfBrowse} image={listOfBrowse.cover_small} title={listOfBrowse.title} type={listOfBrowse.type} id={listOfBrowse.id}/>
           ))}
         </div>
       </div>

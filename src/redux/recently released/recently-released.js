@@ -5,6 +5,7 @@ const INITIALIZE_STATE = {
     latestPlayList: null,
     addRealeases: null,
     playlist: null,
+    isPlaylist: true,
 }
 
 const recentlyReducer = (state = INITIALIZE_STATE, action) =>{
@@ -26,7 +27,12 @@ const recentlyReducer = (state = INITIALIZE_STATE, action) =>{
              playlist: action.payload
          }
      }
-
+    if(action.type === isPlaylist.IDENTIFYING_ALBUMS){
+        return {
+          ...state,
+          isPlaylist: !state.isPlaylist,
+        };
+    }
     return state;
 }
 

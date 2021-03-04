@@ -38,7 +38,7 @@ const Directory = ({ setLatestSongs, latestPlayList }) => {
             title="Released this week"
           />
           <PlayList ListOfPlayLists={latestPlayList.playlists.data} title="Feaured Playlists" />
-          <Browse browse={latestPlayList.albums.data}title="Browse"/>
+          <Browse browse={latestPlayList.albums.data} title="Browse"/>
           {/* <CardSection data={data.playlists} title="Feaured Playlists" />
             <CardSection data={data.albums} title="Browse" /> */}
           {/* <PlayBox musicData={tracks} /> */}
