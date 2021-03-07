@@ -26,7 +26,7 @@ const PlayBox = ({ playlist}) => {
    const playlistData = playlist?.tracks?.data?.map(
      (track) => track.title
    );
-    console.log( playlistData[1])
+    console.log( playlistData)
     return (
       <div className="play-box-play">
         <div className="play-box">

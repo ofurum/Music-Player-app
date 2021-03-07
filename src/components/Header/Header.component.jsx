@@ -10,7 +10,7 @@ const Header = () => (
       </div>
       <div className="directory-text">
         <span className="text-name">Your favorite tunes</span>
-        <span>All day and night</span>
+        <span>All 🌞 and 🌙</span>
       </div>
     </div>
   </div>
