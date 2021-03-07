@@ -28,6 +28,20 @@
      display: flex;
      justify-content: center;
   }
+   .fa-play-circle{
+    color: #6c63ff;
+  }
+   .fa-pause-circle{
+      color: #6c63ff;
+    }
+
+    .fa-step-backward{
+      color: rgb(226, 220, 220)
+    }
+
+    .fa-step-forward{
+      color: rgb(226, 220, 220)
+    }
 
     .play-logo{
       width: 6%;
@@ -43,7 +57,7 @@
     }
     .options > *{
         margin-left: 15px;
-      //  justify-content: space-between;
+       color: rgb(226, 220, 220)
     }
   
 }

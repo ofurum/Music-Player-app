@@ -5,7 +5,8 @@ import CardSection from '../../components/section/section.component'
 import { connect } from "react-redux";
 import {setLatestSongs} from '../../redux/recently released/recently-released.action';
 import PlayList from '../../components/playlists/playlist.component';
-import Browse from '../../components/Browse/Browse.component'
+import Browse from '../../components/Browse/Browse.component';
+import Loading from '../../components/Load/Loader.component'
 
 const Directory = ({ setLatestSongs, latestPlayList }) => {
   useEffect(() => {
@@ -28,17 +29,26 @@ const Directory = ({ setLatestSongs, latestPlayList }) => {
 
     void musicData();
   }, []);
-  if (latestPlayList === null) return latestPlayList;
+  //if (latestPlayList === null) return latestPlayList;
   return (
     <div className="directory">
       <div className="directory-hidden">
         <div className="directory-sections">
-          <CardSection
-            latestPlayList={latestPlayList.tracks.data}
-            title="Released this week"
-          />
-          <PlayList ListOfPlayLists={latestPlayList.playlists.data} title="Feaured Playlists" />
-          <Browse browse={latestPlayList.albums.data} title="Browse"/>
+          {!latestPlayList ? (
+            <Loading />
+          ) : (
+            <>
+              <CardSection
+                latestPlayList={latestPlayList.tracks.data}
+                title="Released this week"
+              />
+              <PlayList
+                ListOfPlayLists={latestPlayList.playlists.data}
+                title="Feaured Playlists"
+              />
+              <Browse browse={latestPlayList.albums.data} title="Browse" />
+            </>
+          )}
           {/* <CardSection data={data.playlists} title="Feaured Playlists" />
             <CardSection data={data.albums} title="Browse" /> */}
           {/* <PlayBox musicData={tracks} /> */}

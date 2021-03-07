@@ -1,0 +1,23 @@
+ .loading{
+    //  display: flex;
+    //  justify-content: center;
+     margin-top: 200px;
+     overflow: hidden;
+   .spinner{
+    //   margin-top: 50px;
+       display: flex;
+       justify-content: center;
+       animation: spin  1s infinite linear;
+       color: #6c63ff
+    }
+
+    
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(369deg);
+  }
+  }
+}

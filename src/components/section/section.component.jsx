@@ -14,15 +14,16 @@ const CardSection = ({ latestPlayList, title, addNewPlaylist }) => {
         <hr />
       </div>
       <div className="card-part">
-        {latestPlayList.map((freshData, index) => (
-          <Card
-            key={freshData.id}
-            freshData={freshData}
-            title={freshData.title}
-            index={index}
-            image={freshData.album.cover_medium}
-          />
-        ))}
+        {latestPlayList &&
+          latestPlayList?.map((freshData, index) => (
+            <Card
+              key={freshData.id}
+              freshData={freshData}
+              title={freshData.title}
+              index={index}
+              image={freshData.album.cover_medium}
+            />
+          ))}
       </div>
     </div>
   );

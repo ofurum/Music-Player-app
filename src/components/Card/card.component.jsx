@@ -16,18 +16,19 @@ const Card = ({
   match,
   history,
   setIsPlaylist,
+  previewPlaylist,
   id,
 }) => {
-  console.log("card-fresDa", type);
+  console.log("card-fresDa", freshData);
   //  history = createBrowserHistory({ forceRefresh: true });
   const addPlaylist = () => {
     if (type == "playlist" || type == "album") {
-      setIsPlaylist(true)
+      setIsPlaylist(true);
       return history.push(`${match.url}${id}`);
-
-    } else {
+    } else{
       return addNewPlaylist(freshData);
     }
+
   };
   return (
     <div className="card-component" onClick={() => addPlaylist()}>

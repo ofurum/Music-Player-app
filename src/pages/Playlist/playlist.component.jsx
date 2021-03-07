@@ -4,6 +4,7 @@ import './playlist.styles.scss';
 import Card from '../../components/Card/card.component'
 import { connect } from "react-redux";
 import { setPlaylist } from "../../redux/listPlayList/listPlaList.action";
+import Loading from '../../components/Load/Loader.component'
 const PlayListPage = ({ match, playlist, setPlaylist, isPlaylist}) => {
 //    console.log('Play',match , 'list',playlist.tracks.data)
   useEffect(() => {
@@ -24,21 +25,27 @@ const PlayListPage = ({ match, playlist, setPlaylist, isPlaylist}) => {
 
     getData();
   }, []);
-  if(playlist === null) return playlist
+//  if(playlist === null) return playlist
+ if(!playlist || playlist.error){
+   return <Loading />
+ }
   return (
     <div className="playlist">
-      <h1>{playlist.description ? playlist.description : playlist.title}</h1>
+      <h1>{playlist?.title}</h1>
       <div className="playlist-card">
-        {playlist.tracks.data.map((track, index) => (
-          <Card
-            key={track.id}
-            index={index}
-            image={
-              track.album ? track.album.cover_medium : playlist.cover_medium
-            }
-            title={track.title}
-          />
-        ))}
+        {playlist?.tracks?.data?.map((track, index) =>{ 
+          return (
+            <Card
+              key={track.id}
+              index={track.id}
+              image={
+                track.album ? track.album.cover_medium : playlist.cover_medium
+              }
+              title={track.title}
+              freshData={playlist}
+              index={track.id}
+            />
+          );})}
       </div>
     </div>
   );

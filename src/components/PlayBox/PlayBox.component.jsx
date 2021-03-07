@@ -6,19 +6,27 @@ import {connect} from 'react-redux';
 
 const PlayBox = ({ playlist}) => {
    const [isPlayMusic, setPlayMusic] =useState(false)
+   //const { preview,title } = playlist?.tracks?.data?.map((track) => track);
 
    const refContainer = useRef();
 
    useEffect(() => {
        setPlayMusic(false)
-   }, [playlist])
+   }, [playlist]);
+   
    const playMusic  = () => {
        console.log("play")
          isPlayMusic ? refContainer.current.pause() : refContainer.current.play()
       setPlayMusic(!isPlayMusic);
    }
-  if(playlist === null) return playlist;
-    console.log('playBox',playlist)
+  // if(playlist.tracks === null) return playlist;
+   console.log("playBox", playlist?.tracks?.data?.map(track => (
+      track
+   )));
+   const playlistData = playlist?.tracks?.data?.map(
+     (track) => track.title
+   );
+    console.log( playlistData[1])
     return (
       <div className="play-box-play">
         <div className="play-box">
@@ -37,7 +45,7 @@ const PlayBox = ({ playlist}) => {
           />
           <div className="play-name">
             <span>
-              {!playlist?.title ? "Nothing is playing" : playlist.title}
+              {!playlist?.title ? "Nothing is playing" :  playlist.title}
             </span>
           </div>
           <div className="play-logo">
@@ -56,11 +64,12 @@ const PlayBox = ({ playlist}) => {
             <div className="bar"></div>
           </div>
           <div className="options">
-            <i class="far fa-heart"></i>
-            <i class="fas fa-random"></i>
-            <i class="fas fa-redo-alt"></i>
+            <i className="far fa-heart"></i>
+            <i className="fas fa-random"></i>
+            <i className="fas fa-redo-alt"></i>
+            <i className="fas fa-volume-down"></i>
           </div>
-          {<audio ref={refContainer} src={`${playlist.preview}`} />}
+         {<audio ref={refContainer} src={`${playlist?.preview}`} />} 
         </div>
       </div>
     );
