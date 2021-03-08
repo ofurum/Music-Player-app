@@ -18,7 +18,7 @@ const CardSection = ({ latestPlayList, title, addNewPlaylist }) => {
           latestPlayList?.map((freshData, index) => (
             <Card
               key={freshData.id}
-              freshData={freshData}
+              newData={freshData}
               title={freshData.title}
               index={index}
               image={freshData.album.cover_medium}

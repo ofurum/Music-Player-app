@@ -37,13 +37,12 @@ const PlayListPage = ({ match, playlist, setPlaylist, isPlaylist}) => {
           return (
             <Card
               key={track.id}
-              index={track.id}
               image={
                 track.album ? track.album.cover_medium : playlist.cover_medium
               }
               title={track.title}
               freshData={playlist}
-              index={track.id}
+              index={index}
             />
           );})}
       </div>

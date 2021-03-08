@@ -7,6 +7,7 @@ import { withRouter } from "react-router-dom";
 import {createBrowserHistory} from 'history';
 import {setIsPlaylist} from '../../redux/listPlayList/listPlaList.action'
 const Card = ({
+  newData,
   freshData,
   addNewPlaylist,
   index,
@@ -25,10 +26,9 @@ const Card = ({
     if (type == "playlist" || type == "album") {
       setIsPlaylist(true);
       return history.push(`${match.url}${id}`);
-    } else{
-      return addNewPlaylist(freshData);
-    }
-
+    } 
+     if(freshData) return addNewPlaylist(freshData.tracks.data[index]);
+   return  addNewPlaylist(newData)
   };
   return (
     <div className="card-component" onClick={() => addPlaylist()}>

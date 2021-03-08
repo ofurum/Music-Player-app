@@ -5,6 +5,8 @@ import {connect} from 'react-redux';
 
 
 const PlayBox = ({ playlist}) => {
+  const index = 0
+  console.log('playBox', playlist)
    const [isPlayMusic, setPlayMusic] =useState(false)
    //const { preview,title } = playlist?.tracks?.data?.map((track) => track);
 
@@ -19,14 +21,14 @@ const PlayBox = ({ playlist}) => {
          isPlayMusic ? refContainer.current.pause() : refContainer.current.play()
       setPlayMusic(!isPlayMusic);
    }
-  // if(playlist.tracks === null) return playlist;
-   console.log("playBox", playlist?.tracks?.data?.map(track => (
-      track
-   )));
-   const playlistData = playlist?.tracks?.data?.map(
-     (track) => track.title
-   );
-    console.log( playlistData)
+  // // if(playlist.tracks === null) return playlist;
+  //  console.log("playBox", playlist?.tracks?.data?.map(track => (
+  //     track
+  //  )));
+  //  const playlistData = playlist?.tracks?.data?.map(
+  //    (track) => track.title
+  //  );
+  //   console.log( playlistData)
     return (
       <div className="play-box-play">
         <div className="play-box">
@@ -35,8 +37,8 @@ const PlayBox = ({ playlist}) => {
             style={{
               backgroundImage: `url(${
                 playlist?.album?.cover ||
-                // playlist?.picture ||
-                // playlist?.cover ||
+                playlist?.picture ||
+                playlist?.cover ||
                 imageUrl
               })`,
               backgroundSize: "cover",

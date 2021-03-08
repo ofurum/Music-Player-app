@@ -15,7 +15,7 @@ const PlayList = ({ListOfPlayLists, title}) => {
           {!ListOfPlayLists ? (
             <Loading />
           ) : (
-            ListOfPlayLists.map((listOfPlaylist) => (
+            ListOfPlayLists.map((listOfPlaylist,index) => (
               <Card
                 key={listOfPlaylist.id}
                 freshData={listOfPlaylist}
@@ -23,6 +23,7 @@ const PlayList = ({ListOfPlayLists, title}) => {
                 title={listOfPlaylist.title}
                 type={listOfPlaylist.type}
                 id={listOfPlaylist.id}
+                index={index}
               />
             ))
           )}
