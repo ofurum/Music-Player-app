@@ -38,7 +38,7 @@ const PlayBox = ({ playlist}) => {
               backgroundImage: `url(${
                 playlist?.album?.cover ||
                 playlist?.picture ||
-                playlist?.cover ||
+                playlist?.md5_image ||
                 imageUrl
               })`,
               backgroundSize: "cover",
