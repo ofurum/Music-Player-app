@@ -2,3 +2,10 @@
     width: 85%;
     height: 100vh
 }
+
+@media only screen and (max-width: 600px){
+    .home-page{
+    width: 80%;
+    height: 50vh
+}
+}

@@ -12,7 +12,7 @@ const Header = ({ themeToggle, darkMode }) => (
         <span className="text-name">Your favorite tunes</span>
         <span>
           All <span onClick={themeToggle}>🌞</span> and{" "}
-          <span onClick={darkMode} >🌙</span>
+          <span onClick={darkMode}>🌙</span>
         </span>
       </div>
     </div>

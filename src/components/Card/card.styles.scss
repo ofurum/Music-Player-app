@@ -17,3 +17,9 @@
       justify-content: center
    }
 }
+
+@media only screen and (max-width: 600px) {
+   .card-component{
+      min-width: 50%;
+   }
+}

@@ -3,6 +3,7 @@
     overflow: hidden;
     height: 25vh;
     background:#ffb5a7;
+
    .directory-header{
     display: flex;
    flex-direction: row;
@@ -38,5 +39,37 @@
      .text-name{
          margin-top:80px
      }
+}
+}
+
+@media only screen and (max-width: 600px) {
+   .header{
+       overflow: hidden;
+    .directory-header{
+         .directory-image{
+            overflow: hidden;
+            display: none;
+       .dir-image{
+             display: none;
+
+        }
+   }
+       .directory-text{
+        display: flex;
+        //flex-direction: column;
+         color: #fff;
+        letter-spacing:1px;
+        font-size: 25px;
+        padding-right: 1px;
+        font-weight: bolder;
+        margin-right: auto;
+        margin-left:auto;
+    }
+    .directory-text > *{
+        line-height: 2px;
+        cursor: pointer;
+    }
+
+   }
 }
 }

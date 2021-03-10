@@ -45,3 +45,31 @@
      
     
 }
+
+@media only screen and (max-width: 450px) {
+  .side-bar{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+       .name{
+         display: none;
+     }
+
+     .search{
+         display: none;
+     }
+     .discover{
+          display: none;
+     }
+     .playlistss{
+         display: none;
+     }
+     .favorite{
+         display: none;
+     }
+     .charts{
+         display: none;
+     }
+  }
+}

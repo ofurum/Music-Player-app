@@ -24,3 +24,17 @@
 
                                                                                                                                                                                                              
 }
+
+@media only screen and (max-width: 600px){
+  .card-section {
+
+      .card-part{
+        display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      grid-gap: 40px;
+      margin-left: 40px
+   }
+  }
+
+}

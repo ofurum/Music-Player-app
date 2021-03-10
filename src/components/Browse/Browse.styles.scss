@@ -15,12 +15,28 @@
   .browse-title{
     display: flex;
     align-items: center;
-
+     margin-left: 30px;
      hr{
     height:0px;
     width: 80%
   }
   }
-
                                                                                                                                                                                                              
+}
+
+
+ @media only screen and (max-width: 600px){
+  .browse-section {
+   display: flex;
+  flex-direction: column;
+   margin-left:30px;
+      .browse-part{
+        display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      grid-gap: 40px;
+       margin-left: 40px
+   }
+  }
+
 }

@@ -24,3 +24,17 @@
 
                                                                                                                                                                                                              
 }
+
+@media only screen and (max-width: 450px){
+  .playlist-section {
+
+      .playlist-part{
+        display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      grid-gap: 40px;
+      margin-left: 40px
+   }
+  }
+
+}
