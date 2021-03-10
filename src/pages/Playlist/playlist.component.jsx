@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import PlaylistDisplay from '../../components/PlaylistDisplay/PlaylistDisplay.component'
+//import PlaylistDisplay from '../../components/PlaylistDisplay/PlaylistDisplay.component'
 import './playlist.styles.scss';
 import Card from '../../components/Card/card.component'
 import { connect } from "react-redux";
