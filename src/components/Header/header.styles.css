@@ -1,0 +1,85 @@
+.header {
+  overflow: hidden;
+  height: 25vh;
+  background: #ffb5a7;
+}
+
+.header .directory-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .directory-header .directory-image {
+  overflow: hidden;
+}
+
+.header .directory-header .directory-image .dir-image {
+  height: 30vh;
+  width: 33%;
+  position: absolute;
+  top: 0;
+}
+
+.header .directory-header .directory-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: end;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding-right: 90px;
+  font-weight: bolder;
+}
+
+.header .directory-header .directory-text > * {
+  margin-top: 50px;
+  line-height: 2px;
+  cursor: pointer;
+}
+
+.header .directory-header .text-name {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    overflow: hidden;
+  }
+  .header .directory-header .directory-image {
+    overflow: hidden;
+    display: none;
+  }
+  .header .directory-header .directory-image .dir-image {
+    display: none;
+  }
+  .header .directory-header .directory-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 25px;
+    padding-right: 1px;
+    font-weight: bolder;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header .directory-header .directory-text > * {
+    line-height: 2px;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=header.styles.css.map */

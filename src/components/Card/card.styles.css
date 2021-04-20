@@ -1,0 +1,29 @@
+.card-component {
+  width: 10%;
+}
+
+.card-component .image {
+  width: 100%;
+  height: 15vh;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-component .card-component-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-component {
+    min-width: 50%;
+  }
+}
+/*# sourceMappingURL=card.styles.css.map */

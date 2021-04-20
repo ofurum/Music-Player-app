@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=sideBar.styles.css.map */
+.side-bar {
+  background: blue;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.side-bar .avater {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-bar .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  line-height: 0;
+}
+
+.side-bar .menu-items {
+  color: #fff;
+  cursor: pointer;
+  display: flex column;
+  margin-top: 40px;
+}
+
+.side-bar .menu-items > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60.5%;
+  padding: 20px;
+  padding-left: 30%;
+}
+
+.side-bar .menu-items > *:hover {
+  background: #7e7ef5;
+}
+
+.side-bar .menu-items > *.fas {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 450px) {
+  .side-bar {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  .side-bar .name {
+    display: none;
+  }
+  .side-bar .search {
+    display: none;
+  }
+  .side-bar .discover {
+    display: none;
+  }
+  .side-bar .playlistss {
+    display: none;
+  }
+  .side-bar .favorite {
+    display: none;
+  }
+  .side-bar .charts {
+    display: none;
+  }
+}
+/*# sourceMappingURL=sideBar.styles.css.map */

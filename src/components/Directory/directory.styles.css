@@ -1,0 +1,11 @@
+.directory {
+  height: 70vh;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumGB) var(--scrollbarBG);
+}
+
+.directory::-webkit-scrollbar {
+  width: 11px;
+}
+/*# sourceMappingURL=directory.styles.css.map */

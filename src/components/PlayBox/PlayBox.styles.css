@@ -1,0 +1,82 @@
+.play-box-play {
+  opacity: 0.9;
+}
+
+.play-box-play .play-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  border-top: 1px solid whitesmoke;
+  background: white;
+}
+
+.play-box-play .play-box .image {
+  width: 6%;
+  height: 8vh;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 18px;
+  margin-top: 4px;
+}
+
+.play-box-play .play-box .play-name {
+  width: 6%;
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.play-box-play .play-box .fa-play-circle {
+  color: #6c63ff;
+}
+
+.play-box-play .play-box .fa-pause-circle {
+  color: #6c63ff;
+}
+
+.play-box-play .play-box .fa-step-backward {
+  color: #e2dcdc;
+}
+
+.play-box-play .play-box .fa-step-forward {
+  color: #e2dcdc;
+}
+
+.play-box-play .play-box .play-logo {
+  width: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.play-box-play .play-box .progress-bar {
+  width: 50%;
+  background-color: #6c63ff;
+  height: 2px;
+}
+
+.play-box-play .play-box .options > * {
+  margin-left: 15px;
+  color: #e2dcdc;
+}
+/*# sourceMappingURL=PlayBox.styles.css.map */

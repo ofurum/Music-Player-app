@@ -18,8 +18,7 @@ const PlayListPage = ({ match, playlist, setPlaylist, isPlaylist}) => {
         console.log("playlistpage", playlistData);
         setPlaylist(playlistData);
       } catch (error) {
-        const errorMessage = new Error(error.message);
-        console.log(errorMessage);
+        return  new Error(error.message);
       }
     };
 
