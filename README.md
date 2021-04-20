@@ -1,1 +1,1 @@
-![alt text](https://github.com/ofurum/Music-Player-app/blob/main/src/assets/deezer-snapshot.png?raw=true)
+![alt text](https://github.com/ofurum/Music-Player-app/main/src/assets/deezer-snapshot.png?raw=true)
