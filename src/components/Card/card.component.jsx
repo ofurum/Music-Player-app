@@ -1,10 +1,8 @@
 import React from 'react';
-import imageUrl from "../../assets/bgImg.png";
 import './card.styles.scss';
 import { addNewPlaylist } from "../../redux/addPlaylist/addPlaylist.action";
 import {connect} from 'react-redux';
 import { withRouter } from "react-router-dom";
-import {createBrowserHistory} from 'history';
 import {setIsPlaylist} from '../../redux/listPlayList/listPlaList.action'
 const Card = ({
   newData,
@@ -23,7 +21,7 @@ const Card = ({
   console.log("card-fresDa", freshData);
   //  history = createBrowserHistory({ forceRefresh: true });
   const addPlaylist = () => {
-    if (type == "playlist" || type == "album") {
+    if (type === "playlist" || type === "album") {
       setIsPlaylist(true);
       return history.push(`${match.url}${id}`);
     } 

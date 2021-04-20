@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import './section.styles.scss';
 import Card from '../../components/Card/card.component'
-import imageUrl from '../../assets/bgImg.png'
 import {addNewPlaylist} from '../../redux/addPlaylist/addPlaylist.action'
 const CardSection = ({ latestPlayList, title, addNewPlaylist }) => {
   console.log(addNewPlaylist(latestPlayList), "CardSection");

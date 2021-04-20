@@ -1,5 +1,4 @@
-import React, {useEffect, useState}from 'react';
-import musicIcon from '../../assets/drawingIcon.svg'
+import React, {useEffect}from 'react';
 import './directory.styles.scss';
 import CardSection from '../../components/section/section.component'
 import { connect } from "react-redux";

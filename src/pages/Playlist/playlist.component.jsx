@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { setPlaylist } from "../../redux/listPlayList/listPlaList.action";
 import Loading from '../../components/Load/Loader.component'
 const PlayListPage = ({ match, playlist, setPlaylist, isPlaylist}) => {
-//    console.log('Play',match , 'list',playlist.tracks.data)
+
   useEffect(() => {
     const getData = async () => {
       console.log("isFetching", "playlistpage");

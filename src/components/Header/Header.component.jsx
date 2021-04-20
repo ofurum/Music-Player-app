@@ -6,7 +6,7 @@ const Header = ({ themeToggle, darkMode }) => (
   <div className="header">
     <div className="directory-header">
       <div className="directory-image">
-        <img src={musicIcon} alt="image" className="dir-image" />
+        <img src={musicIcon} alt="musicICon" className="dir-image" />
       </div>
       <div className="directory-text">
         <span className="text-name">Your favorite tunes</span>

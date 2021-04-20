@@ -5,8 +5,6 @@ import {connect} from 'react-redux';
 
 
 const PlayBox = ({ playlist}) => {
-  const index = 0
-  console.log('playBox', playlist)
    const [isPlayMusic, setPlayMusic] =useState(false)
    //const { preview,title } = playlist?.tracks?.data?.map((track) => track);
 
