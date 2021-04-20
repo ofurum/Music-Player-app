@@ -7,4 +7,4 @@ Incase you prefer a dark mode theme this feature is also included.
 
 
 ### Usage
-Click on this url: [GitHub](https://dezeer-music-player.netlify.app/)
+Click on this url: https://dezeer-music-player.netlify.app
